@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: perso
+  name: corentinperso
 spec:
   replicas: 1
   selector:
@@ -13,7 +13,7 @@ spec:
         app: myservice
     spec:
       containers:
-        - image: corentinnigon/corentinperso:1
+        - image: corentinnigon/corentinperso:latest
           imagePullPolicy: IfNotPresent
           name: corentinperso
       restartPolicy: Always

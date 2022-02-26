@@ -3,7 +3,7 @@ kind: Service
 metadata:
   labels:
     app: myservice
-  name: perso
+  name: corentinperso
 spec:
   ports:
     - nodePort: 30945
